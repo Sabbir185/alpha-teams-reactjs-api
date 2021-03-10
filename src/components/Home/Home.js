@@ -13,9 +13,12 @@ const Home = () => {
         .then(data => setTeams(data.teams) )
         .catch(err => alert('Network failed',err))
     },[])
+    
     return (
         <div className="home">
-            <Header></Header>
+            <div className='header-style'>
+                <Header></Header>
+            </div>
             <div className='container card-team'>
                 {
                     teams.map(team =>  <Teams team={team}></Teams>)
