@@ -4,8 +4,26 @@
     border-radius: 20px;
     color: white;
     margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .body-img{
     width: 15px;
     margin-right: 10px;
+}
+
+.gender-pic{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 770px) {
+    .gender-pic {
+        display: block;
+        margin: auto;
+    }
+    .body-design{
+        text-align: center;
+    }
 }

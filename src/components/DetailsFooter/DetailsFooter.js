@@ -11,7 +11,7 @@ const DetailsFooter = (props) => {
     return (
         <div className='container'>
             <section className='text-white'>
-                <article>
+                <article style={{marginBottom:'40px'}}>
                     <p className='text-justify'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quos nihil omnis perferendis ducimus accusantium veritatis, natus quia animi ex assumenda enim aperiam non distinctio alias voluptatem magni! Accusamus illum repellat eveniet nam officia pariatur necessitatibus, omnis ut molestiae distinctio, maxime provident non excepturi error itaque enim architecto quam quos. Beatae placeat officia odit sed accusamus blanditiis dignissimos magni corrupti debitis perspiciatis vel quod, quae a minima cum dolorem suscipit aspernatur molestias. Quisquam numquam blanditiis accusamus officiis tempore quis omnis non consequuntur quia, at maxime pariatur deserunt rem, suscipit eos porro nihil impedit adipisci similique, molestias tempora libero. Esse nostrum, velit ipsa recusandae debitis ea consequatur ex fugit rem sequi, amet voluptas itaque nisi accusantium aperiam corporis ut fuga necessitatibus, impedit laudantium. Nemo tenetur deleniti quam? Odit inventore reiciendis quae perspiciatis, aspernatur debitis at. Quaerat magnam nostrum sint libero eius necessitatibus officiis praesentium earum, modi facere repellat ipsam, veritatis possimus?</p>
                 </article>
 
