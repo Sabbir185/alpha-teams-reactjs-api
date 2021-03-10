@@ -8,9 +8,11 @@ const Teams = (props) => {
         <div>
             <div className='team'>
                 <img className='team-logo' src={strTeamBadge} alt=""/>
-                <h5>{strTeam}</h5>
-                <p>Sports type: {strSport}</p>
-                <button>Explore</button>
+                <div className='text-center mt-3'>
+                    <h5>{strTeam}</h5>
+                    <p>Sports type: {strSport}</p>
+                    <button className="btn btn-primary">Explore</button>
+                </div>
             </div>
         </div>
     );
