@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import DetailsBody from '../DetailsBody/DetailsBody';
+import DetailsFooter from '../DetailsFooter/DetailsFooter';
 import DetailsHeader from '../DetailsHeader/DetailsHeader';
+import './TeamDetails.css';
 
 
 const TeamDetails = () => {
-    // const {teamId} = useParams();
-
-    const teamId = 133604;
+  
+    const teamId = 133601;
     const [team, setTeam] = useState([]);
 
     useEffect(()=>{
@@ -17,10 +18,24 @@ const TeamDetails = () => {
     },[]);
 
     return (
-        <div>
-            {
-               team.map(team => <DetailsHeader key={team.idTeam} logo={team}></DetailsHeader> )
-            }
+        <div className='details-main'>
+            <section className='details-header'>
+                {
+                team.map(team => <DetailsHeader key={team.idTeam} logo={team}></DetailsHeader> )
+                }
+            </section>
+
+            <section className='details-body'>
+                {
+                    team.map(team => <DetailsBody key={team.idTeam} teamInfo={team} ></DetailsBody>)
+                }
+            </section>
+
+            <section className='details-footer'>
+                {
+                    team.map(team => <DetailsFooter key={team.idTeam} socialMedia={team}></DetailsFooter>)
+                } 
+            </section>
         </div>
     );
 };
