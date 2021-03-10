@@ -7,7 +7,7 @@ const Teams = (props) => {
     return (
         <div>
             <div className='team'>
-                <img className='team-logo' src={strTeamBadge} alt=""/>
+                <img className='team-logo img-fluid' src={strTeamBadge} alt=""/>
                 <div className='text-center mt-3'>
                     <h5>{strTeam}</h5>
                     <p>Sports type: {strSport}</p>

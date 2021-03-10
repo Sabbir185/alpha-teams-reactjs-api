@@ -9,3 +9,19 @@
     padding-bottom: 40px;
 }
 
+@media screen and (max-width: 771px) {
+    .card-team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+@media screen and (max-width: 576px) {
+.card-team {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
+
