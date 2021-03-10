@@ -1,0 +1,19 @@
+.logo-bg{
+    background-image: url('/src/images/header1.jpg');
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #1ABC9C;
+}
+
+.details-logo{
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, .5);
+    padding: 5px;
+}
