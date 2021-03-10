@@ -7,18 +7,23 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home/Home';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
     <Router>
       <Switch>
 
-        <Route path='/'>
+        <Route exact path='/'>
           <Home/>
         </Route>
 
         <Route path='/home'>
           <Home/>
+        </Route>
+
+        <Route path='*'>
+          <NotFound/>
         </Route>
         
       </Switch>
