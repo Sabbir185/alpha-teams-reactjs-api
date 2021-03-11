@@ -3,10 +3,13 @@ import './DetailsHeader.css';
 
 const DetailsHeader = (props) => {
     
-    const {strTeamBadge} = props.logo;
+    const {strTeamBadge, strTeamBanner} = props.logo;
+    const bannerStyle = {
+        backgroundImage: `url(${strTeamBanner})`,
+    }
     
     return (
-        <div className='logo-bg'>
+        <div className='logo-bg' style={bannerStyle}>
             <img className='details-logo img-fluid' src={strTeamBadge} alt=""/>
         </div>
     );
