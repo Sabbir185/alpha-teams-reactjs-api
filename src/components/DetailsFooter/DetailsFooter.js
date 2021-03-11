@@ -22,9 +22,9 @@ const DetailsFooter = (props) => {
 
             <footer>
                 <div className='text-center pb-5 pt-3'>
-                    <a href={strFacebook} target='_blank'><img className='img-size2' src={Facebook}/></a>
-                    <a href={strTwitter} target='_blank'><img className='img-size2' src={Twitter}/></a>
-                    <a href={strYoutube} target='_blank'><img className='img-size2' src={Youtube}/></a>
+                    <a href={`https://${strFacebook}`} target='_blank'><img className='img-size2' src={Facebook}/></a>
+                    <a href={`https://${strTwitter}`} target='_blank'><img className='img-size2' src={Twitter}/></a>
+                    <a href={`https://${strYoutube}`} target='_blank'><img className='img-size2' src={Youtube}/></a>
                 </div>
             </footer>
         </div>

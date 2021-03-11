@@ -24,7 +24,7 @@ function App() {
         </Route>
 
         <Router path='/team/:teamId'>
-          <TeamDetails></TeamDetails>
+          <TeamDetails/>
         </Router>
 
         <Router path='*'>

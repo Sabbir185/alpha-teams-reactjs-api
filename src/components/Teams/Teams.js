@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import './Teams.css';
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Teams = (props) => {
     const {strTeam, strSport, strTeamBadge, idTeam} = props.team;
 
     const history = useHistory();
     const btnClickHandler = (teamId) =>{
-        console.log(teamId);
+        console.log(typeof(teamId));
         const url = `/team/${teamId}`;
         history.push(url);
     }
@@ -22,6 +23,7 @@ const Teams = (props) => {
                     <h5>{strTeam}</h5>
                     <p>Sports type: {strSport}</p>
                     <p>ID : {idTeam}</p>
+
                     <button className="btn btn-primary" onClick={()=> btnClickHandler(idTeam)}>
                         Explore <FontAwesomeIcon icon={faArrowRight} />
                     </button>
