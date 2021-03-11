@@ -6,7 +6,6 @@ import './DetailsFooter.css';
 
 
 const DetailsFooter = (props) => {
-    console.log(props.socialMedia)
     const {strFacebook, strTwitter, strYoutube} = props.socialMedia;
     
     return (
@@ -23,9 +22,9 @@ const DetailsFooter = (props) => {
 
             <footer>
                 <div className='text-center pb-5 pt-3'>
-                    <a href={`https://${strFacebook}`} target='_blank'><img className='img-size2' src={Facebook}/></a>
-                    <a href={`https://${strTwitter}`} target='_blank'><img className='img-size2' src={Twitter}/></a>
-                    <a href={`https://${strYoutube}`} target='_blank'><img className='img-size2' src={Youtube}/></a>
+                    <a href={`https://${strFacebook}`} target='_blank' rel="noreferrer"><img className='img-size2' src={Facebook} alt=""/></a>
+                    <a href={`https://${strTwitter}`} target='_blank' rel="noreferrer"><img className='img-size2' src={Twitter} alt=""/></a>
+                    <a href={`https://${strYoutube}`} target='_blank' rel="noreferrer"><img className='img-size2' src={Youtube} alt=""/></a>
                 </div>
             </footer>
         </div>
