@@ -23,13 +23,13 @@ function App() {
           <Home/>
         </Route>
 
-        <Router path='/team/:teamId'>
+        <Route path="/team/:teamId">
           <TeamDetails/>
-        </Router>
+        </Route>
 
-        <Router path='*'>
+        <Route path='*'>
           <NotFound/>
-        </Router>
+        </Route>
         
       </Switch>
     </Router>

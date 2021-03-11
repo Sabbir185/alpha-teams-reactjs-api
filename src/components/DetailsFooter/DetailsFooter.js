@@ -8,6 +8,7 @@ import './DetailsFooter.css';
 const DetailsFooter = (props) => {
     console.log(props.socialMedia)
     const {strFacebook, strTwitter, strYoutube} = props.socialMedia;
+    
     return (
         <div className='container'>
             <section className='text-white'>

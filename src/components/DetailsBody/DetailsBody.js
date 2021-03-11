@@ -9,7 +9,6 @@ import Female from '../../genderImage/female.png';
 
 
 const DetailsBody = (props) => {
-    console.log(props.teamInfo);
     let {strTeam, intFormedYear, strCountry, strSport, strGender} = props.teamInfo;
 
     const pictureOfTeam = (strGender === 'Male') ? <img className='gender-pic img-fluid' src={Male}/> : <img className='gender-pic img-fluid' src={Female}/> ;

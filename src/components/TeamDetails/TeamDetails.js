@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
 import DetailsBody from '../DetailsBody/DetailsBody';
 import DetailsFooter from '../DetailsFooter/DetailsFooter';
 import DetailsHeader from '../DetailsHeader/DetailsHeader';
 import './TeamDetails.css';
+import { useParams } from "react-router-dom";
 
 
 const TeamDetails = () => {
-    // const {teamId} = useParams();
-    // console.log(teamId);
-  
-    const teamId = 133601;
+    const { teamId } = useParams();
     const [team, setTeam] = useState([]);
 
     useEffect(()=>{
